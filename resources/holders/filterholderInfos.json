@@ -1,0 +1,832 @@
+[
+    {
+        "HolderAddress": "0xcd81917ff5313d02d7da3d47a9afcd3f635c36e3",
+        "Balance": "19646",
+        "USD": 982
+    },
+    {
+        "HolderAddress": "0x33e0bfb620cdde0d17f5ed2efe070f30f2fe6a81",
+        "Balance": "17140",
+        "USD": 857
+    },
+    {
+        "HolderAddress": "0x941658db1f8bf68148d1c0ef3b03b5dd0dd9ce73",
+        "Balance": "5725",
+        "USD": 286
+    },
+    {
+        "HolderAddress": "0x606c4f30aa5717e48fc85f97daca8a9a8d2713b7",
+        "Balance": "4981",
+        "USD": 249
+    },
+    {
+        "HolderAddress": "0x2fe21fc5130e953b862d4a6048cfd016ecf3974d",
+        "Balance": "4758",
+        "USD": 238
+    },
+    {
+        "HolderAddress": "0x4000c288f1145e84a7799a6f3913976fc494bf61",
+        "Balance": "3188",
+        "USD": 159
+    },
+    {
+        "HolderAddress": "0x583d3495eb9c1a15b34f1f52235010d8eb3cea12",
+        "Balance": "2622",
+        "USD": 131
+    },
+    {
+        "HolderAddress": "0x5e19b161c548a820cb97fb2b99a2964d4a81b7c2",
+        "Balance": "2500",
+        "USD": 125
+    },
+    {
+        "HolderAddress": "0xfb500e44e6ace7b39200d9cffdcb68b658bf3377",
+        "Balance": "2454",
+        "USD": 123
+    },
+    {
+        "HolderAddress": "0xfd96f75963fbaff02341e3cff43f48c1f3b13343",
+        "Balance": "2454",
+        "USD": 123
+    },
+    {
+        "HolderAddress": "0xa7d2a9fe08d79bc6a6ee02be933e4539bc752318",
+        "Balance": "2390",
+        "USD": 120
+    },
+    {
+        "HolderAddress": "0x23138ed20f547183be218e26a33acc43e4e3fd83",
+        "Balance": "2255",
+        "USD": 113
+    },
+    {
+        "HolderAddress": "0x912039dc7d78050ccb8e75b3515f9a08348ee698",
+        "Balance": "2248",
+        "USD": 112
+    },
+    {
+        "HolderAddress": "0xeb9f3395f0d865dba867c4f8fbdccf97cccd0c37",
+        "Balance": "2213",
+        "USD": 111
+    },
+    {
+        "HolderAddress": "0xcc14ea1e3478e9753d39490ea50fea609bf7f819",
+        "Balance": "2166",
+        "USD": 108
+    },
+    {
+        "HolderAddress": "0xa8ef1065b278d56c319f4ac388e98231b7523ed7",
+        "Balance": "1974",
+        "USD": 99
+    },
+    {
+        "HolderAddress": "0xdc0b0a1b1badf1a5f6d8540feb3c0b844a54ffb9",
+        "Balance": "1963",
+        "USD": 98
+    },
+    {
+        "HolderAddress": "0x86ecbf411cae23b24530f563c5f6c29a458f1752",
+        "Balance": "1938",
+        "USD": 97
+    },
+    {
+        "HolderAddress": "0xd3899a962f88ae893d23801c38665ed53db2433b",
+        "Balance": "1798",
+        "USD": 90
+    },
+    {
+        "HolderAddress": "0x6b8f8ae14bd0b4c86acd563f5aa970566ad04398",
+        "Balance": "1705",
+        "USD": 85
+    },
+    {
+        "HolderAddress": "0xc38782808b0b457c5f39681b3be9ee53f8aa87fb",
+        "Balance": "1472",
+        "USD": 74
+    },
+    {
+        "HolderAddress": "0x1ace7abbe68210a9fbe1c6c30019781f3e2eaf86",
+        "Balance": "1448",
+        "USD": 72
+    },
+    {
+        "HolderAddress": "0xd44eac671c3fccbedcabc1d13e9251f12f14b2fd",
+        "Balance": "1421",
+        "USD": 71
+    },
+    {
+        "HolderAddress": "0xdbce239dcd1437f08c8ff01bd6d80d304d931fd6",
+        "Balance": "1254",
+        "USD": 63
+    },
+    {
+        "HolderAddress": "0x7df1c0309bc730e75340f147ea3fb4f856d3113e",
+        "Balance": "1139",
+        "USD": 57
+    },
+    {
+        "HolderAddress": "0xd990ef33d359edbb93154a0685972f62ba1f362a",
+        "Balance": "1112",
+        "USD": 56
+    },
+    {
+        "HolderAddress": "0xb7d41819e5bc5635d03a6bb5bc84e326d2323757",
+        "Balance": "1100",
+        "USD": 55
+    },
+    {
+        "HolderAddress": "0xe377f29953ca1310baba1f1d92f7e720eede144a",
+        "Balance": "1019",
+        "USD": 51
+    },
+    {
+        "HolderAddress": "0x82d9aadda882a89fa15a6b0966a668bc054ac28d",
+        "Balance": "1000",
+        "USD": 50
+    },
+    {
+        "HolderAddress": "0x224030f891006c76ef26b3a768d7792e8c89a960",
+        "Balance": "997",
+        "USD": 50
+    },
+    {
+        "HolderAddress": "0xfa6bbe82eb8db68ebc779ef56ae515e8eb2d41e2",
+        "Balance": "966",
+        "USD": 48
+    },
+    {
+        "HolderAddress": "0x30a98bc74cc6a10a36332802fdad70fee5160541",
+        "Balance": "960",
+        "USD": 48
+    },
+    {
+        "HolderAddress": "0x627faaa13ca3d25bf959325d44543e04c99ccec8",
+        "Balance": "926",
+        "USD": 46
+    },
+    {
+        "HolderAddress": "0xe2ec80ae3e26e396864d478c865794f997090ee9",
+        "Balance": "890",
+        "USD": 45
+    },
+    {
+        "HolderAddress": "0xa2966908f05b065d7006c25d91f991b3260c9250",
+        "Balance": "859",
+        "USD": 43
+    },
+    {
+        "HolderAddress": "0x74a8df288187a21988c9574c40936547d5252abf",
+        "Balance": "850",
+        "USD": 43
+    },
+    {
+        "HolderAddress": "0x56f362f6a3f81c6ad74e3dfc63e554db6d3da825",
+        "Balance": "798",
+        "USD": 40
+    },
+    {
+        "HolderAddress": "0x1e8717ec4e27f528f34d8acb7cb2c3424928ef9b",
+        "Balance": "750",
+        "USD": 38
+    },
+    {
+        "HolderAddress": "0xaae16c984ca5245e6ac3c646c1fb3a9695d2f412",
+        "Balance": "719",
+        "USD": 36
+    },
+    {
+        "HolderAddress": "0x333f3598180924e2eb9b841021a9fda65caf82f5",
+        "Balance": "710",
+        "USD": 36
+    },
+    {
+        "HolderAddress": "0x324bf528e31c9bcb20002f5b2f5b148c11ac7a7b",
+        "Balance": "689",
+        "USD": 34
+    },
+    {
+        "HolderAddress": "0x5c1a8e22cae3eb4ea50fbce560049075274ef988",
+        "Balance": "679",
+        "USD": 34
+    },
+    {
+        "HolderAddress": "0x579e8ef5301eb4d68dae43576c725e9ca246e3f1",
+        "Balance": "676",
+        "USD": 34
+    },
+    {
+        "HolderAddress": "0xb0159a82a4b3e6082bc289fb446bad6926c5c1d7",
+        "Balance": "644",
+        "USD": 32
+    },
+    {
+        "HolderAddress": "0xd34d378f9998b7ebe633ad40f754845a468fa78b",
+        "Balance": "615",
+        "USD": 31
+    },
+    {
+        "HolderAddress": "0x9fbb94c613a59470e5897843a74dbb9029544828",
+        "Balance": "574",
+        "USD": 29
+    },
+    {
+        "HolderAddress": "0x1e87aab13c0c1f81caa07de607223e4a3f3a79a4",
+        "Balance": "572",
+        "USD": 29
+    },
+    {
+        "HolderAddress": "0xd53c48759e516cab89bbc36b57128755d0b8f691",
+        "Balance": "524",
+        "USD": 26
+    },
+    {
+        "HolderAddress": "0xf7a2f863299c17dfa11cd8a14e7c7dca92f315b9",
+        "Balance": "507",
+        "USD": 25
+    },
+    {
+        "HolderAddress": "0xf559306324bb49b5ef42103a7693700bdc58ee7a",
+        "Balance": "507",
+        "USD": 25
+    },
+    {
+        "HolderAddress": "0x6b1db99c9a812901ea0fc0c4de3f9f1fe53acc65",
+        "Balance": "500",
+        "USD": 25
+    },
+    {
+        "HolderAddress": "0x9dbbc56dadf03d51db04361d56b91b7f71fedce6",
+        "Balance": "500",
+        "USD": 25
+    },
+    {
+        "HolderAddress": "0x9ed8524963f85eea18bc932d818c34790847dd09",
+        "Balance": "491",
+        "USD": 25
+    },
+    {
+        "HolderAddress": "0x45b6c107df4a01ef2ad028aa0327140648956d8c",
+        "Balance": "481",
+        "USD": 24
+    },
+    {
+        "HolderAddress": "0xd4aedabde7f53f369130ec7800f942a06ed93882",
+        "Balance": "479",
+        "USD": 24
+    },
+    {
+        "HolderAddress": "0x71e450a8eefc3ec01727b086c88f513f893f9686",
+        "Balance": "476",
+        "USD": 24
+    },
+    {
+        "HolderAddress": "0x999999db8a4ab0bc9ad1d0dbca5c77a8d28cc258",
+        "Balance": "413",
+        "USD": 21
+    },
+    {
+        "HolderAddress": "0x12bb4f3474e1c2f1daf51073af7813125aca5cb9",
+        "Balance": "403",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0x4d5e066a4685e9f29cede8f847fbc338f267360e",
+        "Balance": "402",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0xddd263ff86706bf99d85b59bcc02353072241825",
+        "Balance": "402",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0x1171c16e9c43b27d4bb6ed105fe3321f1273e4f6",
+        "Balance": "400",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0xfd2c6aa602f8a30263cf6dc59b4716fe157a8d58",
+        "Balance": "394",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0x69afb743b037b635e8e254c19fe71ae67f0749e3",
+        "Balance": "393",
+        "USD": 20
+    },
+    {
+        "HolderAddress": "0x449774e801d03d425d370732f3378df5782c6f20",
+        "Balance": "387",
+        "USD": 19
+    },
+    {
+        "HolderAddress": "0x4059e94f431b2c48373c3cf962b257b7a4b1dc63",
+        "Balance": "384",
+        "USD": 19
+    },
+    {
+        "HolderAddress": "0x275c36ff291153d3be280c90cbc37b60b0a3404c",
+        "Balance": "379",
+        "USD": 19
+    },
+    {
+        "HolderAddress": "0x247249e8f49b7e44517472fed2ce650e494c074a",
+        "Balance": "376",
+        "USD": 19
+    },
+    {
+        "HolderAddress": "0x40b5fd9361e768d8fb947268bd20df9c5da3e0dd",
+        "Balance": "367",
+        "USD": 18
+    },
+    {
+        "HolderAddress": "0xed83a88af983efb10184a8fd13e4695a40a77d85",
+        "Balance": "361",
+        "USD": 18
+    },
+    {
+        "HolderAddress": "0x3ad7de3b9a445083a1c69e1b136ca5e2ea058324",
+        "Balance": "335",
+        "USD": 17
+    },
+    {
+        "HolderAddress": "0x0eb677400654b8006e61d12f747af590d63c5ed7",
+        "Balance": "335",
+        "USD": 17
+    },
+    {
+        "HolderAddress": "0x9b71aca4149bfff62c45186ef3b8ce25b595bc9b",
+        "Balance": "330",
+        "USD": 17
+    },
+    {
+        "HolderAddress": "0x1b02ac18f9404711e42fb13302691a33e91f210b",
+        "Balance": "328",
+        "USD": 16
+    },
+    {
+        "HolderAddress": "0x384ff4cd8eabcc2765f215f695fe21c1ec426681",
+        "Balance": "328",
+        "USD": 16
+    },
+    {
+        "HolderAddress": "0xccd0b439ff245eb55b65923b596e4ff61de4a9da",
+        "Balance": "324",
+        "USD": 16
+    },
+    {
+        "HolderAddress": "0xeadbec94c5f9061b9a277f9dbb4739768c4b7a2c",
+        "Balance": "312",
+        "USD": 16
+    },
+    {
+        "HolderAddress": "0xb9717567a65dc1eae34450fc9c172c16c3b4ac61",
+        "Balance": "311",
+        "USD": 16
+    },
+    {
+        "HolderAddress": "0xadb5884b2a5a18f8c64a21c352a4c7af599f52da",
+        "Balance": "300",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0xc0bd79c12bc9fb1d2b5882a5ed7ad98ff3398747",
+        "Balance": "300",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0xfe4700487218ad9230e2962800a6b47be3bb8e48",
+        "Balance": "300",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0x3821913fc2ed12d0ba3d4b56f191db1c7bafc76d",
+        "Balance": "300",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0x66642e91700ab3cfbfb7fee9b894d643c7376765",
+        "Balance": "295",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0x6149528be854755956248c043957e103602e81b2",
+        "Balance": "291",
+        "USD": 15
+    },
+    {
+        "HolderAddress": "0xc4a6d25334a3e578aa6c3d23d241587de7011f4a",
+        "Balance": "280",
+        "USD": 14
+    },
+    {
+        "HolderAddress": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+        "Balance": "269",
+        "USD": 13
+    },
+    {
+        "HolderAddress": "0x50e2e09b3dcb1be58d58cb33a6b2c5eca16af5a2",
+        "Balance": "266",
+        "USD": 13
+    },
+    {
+        "HolderAddress": "0x73408dae6c28cf0274be4732c7c0f159669e232e",
+        "Balance": "261",
+        "USD": 13
+    },
+    {
+        "HolderAddress": "0xf6b9cb280ae3c5dd5ec22d7a1a2a7f5f0a1ae879",
+        "Balance": "247",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0xe2adf8b22acf982166ea8890cbd9c846ef5c5715",
+        "Balance": "245",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0xc65883a064ab49eec13ca7e052e481868b00faf5",
+        "Balance": "243",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0x9a77a88ab1e4b6e0d99862eb14ed33734edcc237",
+        "Balance": "240",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0xfb8011f7fefc1ace1380a3b1f5dffb6f64e343ac",
+        "Balance": "237",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0xc96a09fae423fe8de0741ba12c16f87f23a0d7e2",
+        "Balance": "232",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0x59b4e8d10e122c7bbdf0508222c8a29b4861d7e9",
+        "Balance": "231",
+        "USD": 12
+    },
+    {
+        "HolderAddress": "0x3c504db18f7062b93c0deab757c1fc996c158c40",
+        "Balance": "226",
+        "USD": 11
+    },
+    {
+        "HolderAddress": "0xa310bc061bc58dab243e381e9662909fa15ae19f",
+        "Balance": "226",
+        "USD": 11
+    },
+    {
+        "HolderAddress": "0x295bff341b2effee3c8d1211416b720ea0c7451e",
+        "Balance": "226",
+        "USD": 11
+    },
+    {
+        "HolderAddress": "0x0136e7a0be4ea87c9dfbea2f3f05e14395e4baa2",
+        "Balance": "215",
+        "USD": 11
+    },
+    {
+        "HolderAddress": "0x6681b6bc535ed3146f6207390efaa9258ce7d523",
+        "Balance": "215",
+        "USD": 11
+    },
+    {
+        "HolderAddress": "0xd45accf4512af9ceac4c3ab0e770f54212cdf9ac",
+        "Balance": "206",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x729bd9c56e06e088eebf375d0ed27db9a16975d3",
+        "Balance": "202",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x962a0facac11022114dde2a86b3a5f605cf3929b",
+        "Balance": "201",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x3db7f737efe8ad90b9741ae1827fdc5e27489a1e",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x63dc2824b3a4b5c68dc3f8310c80741877bf8611",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x71626c8fda1734006f11fd9113a45c00628189f7",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x95027a0ca4108e6d8985e99afc9d53d5b068bc6d",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0xc07144082b1ffb7e837dcac09b7bcb367edb169f",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0xe20b1e22b7d763090eff5bbb88e14ba79e821727",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0xec16aa76ac98fcb3f9ad999600fa7a254e5bd558",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0xf1cd26db83804a82ffc93dc6ec6fafda83c31b78",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0xf38a3d724b288e8812a2e47f3323cf89dc28f0a0",
+        "Balance": "200",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x2d8d1e3174b581a70e4fdedca1f10560e8dd744c",
+        "Balance": "194",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x5b49b8b585e145bb4762285cce16fb8e974fe377",
+        "Balance": "192",
+        "USD": 10
+    },
+    {
+        "HolderAddress": "0x04bc436bf36ed0d65cd5b0619cc82740ee0027e2",
+        "Balance": "178",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0x9ca7db0398a00ba981c46e350e9a7c3f9ccdbaa9",
+        "Balance": "174",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0x4a083475fd0bfb1ebb05d03d29794bc64696f3af",
+        "Balance": "174",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0x2862439166acc0f6c47a5d3c7c07a8d4e3eb5faa",
+        "Balance": "173",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0xe9e5a2e72d9f99b6f2f522cd6f8b4c88a3da4a8e",
+        "Balance": "172",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0xb0bbf5bdd1729fe6d12203eaff7e073d681abb4e",
+        "Balance": "172",
+        "USD": 9
+    },
+    {
+        "HolderAddress": "0x4e2d5295873605a82de11853024cc1655030afd3",
+        "Balance": "168",
+        "USD": 8
+    },
+    {
+        "HolderAddress": "0x25a6c2c6dc58b25ad81d2b04594df1c443486148",
+        "Balance": "162",
+        "USD": 8
+    },
+    {
+        "HolderAddress": "0x3f2b31757f862ded7b98c6621b53b6656c199e6a",
+        "Balance": "162",
+        "USD": 8
+    },
+    {
+        "HolderAddress": "0x735c8bf67470bb0ce69ad30d7b863c75fbde3c24",
+        "Balance": "149",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0x46fdbfd93244e14af6f686d9c455062a3e6a4849",
+        "Balance": "147",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0xfd24ae6f9edefe99c17daa25eb675ad1aa7729a1",
+        "Balance": "146",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0xe727dc09b1a59f332273edc85ac73a3a2cea182c",
+        "Balance": "143",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0x11b53f072e96a6bb96e39180a90dd4663dd804c2",
+        "Balance": "138",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0x18eadc1c0659f1e4864580578627427d62b8c275",
+        "Balance": "138",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0xd8db2a141dd16afabeb3595fbedde2d432a1ce82",
+        "Balance": "137",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0xdea0c9190c8b611f4464abc09f20065b3832bf22",
+        "Balance": "130",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0x770722e81d9f9741f992f968ef17c0c40974e19c",
+        "Balance": "126",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xa1aea1b69536f5d1bd4582932efbaf4301b5e905",
+        "Balance": "121",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xfed257209796eec486f2a1c0af1b330857e463c4",
+        "Balance": "117",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xdf49a30ad409b7a6d59a008a28689c3b4d0686cc",
+        "Balance": "115",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xc81a251fd7372dee920831caa651712983d9815c",
+        "Balance": "113",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0x7d63fbb3ee0d33b1d89deb62fa6f86a8a8ac2a2a",
+        "Balance": "113",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xb87b3b472b002032955c1a346bb05e9c8d8a8a5a",
+        "Balance": "112",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0xedfb6c459f3fb72abde9e0170beae4cee3df939d",
+        "Balance": "111",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0x7925cb64d1ec47dc425704d14003239faa263512",
+        "Balance": "107",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x2722b05bd10bdac3e56bedad397b4a51bfc9b9b6",
+        "Balance": "106",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x6bb18589e6bb3d89d3e4d0dafde252c79f0746b9",
+        "Balance": "103",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0xbf2d4b2443e999fb436d2f88df889f674cdf789f",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x17a6965013af6147ff50f7f58332c81268390894",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x187be90c5ccc797ae79d9674b287984dfada159a",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x4c70d5b253c2e0c8131a7657fb7447ab1eca702c",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x635b70c04854c463a19496a193618a8f129a3fc0",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x9b24d9d10bae52bd0ec8119e0560dd75d657bb3b",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0xa4e075c42045b2f769c4ccfa69d753fa9d176235",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0xb2fbe64095d35d656ce197f29f1198ff470f93f2",
+        "Balance": "100",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0xD0DCEdC3652E650C43624040D1AB60aF50Bbf378",
+        "Balance": "2897",
+        "USD": 145
+    },
+    {
+        "HolderAddress": "0xd3899a962f88ae893d23801c38665ed53db2433b",
+        "Balance": "4268",
+        "USD": 213
+    },
+    {
+        "HolderAddress": "0xaa3122f9900931a89c4beae56f5449070574b734",
+        "Balance": "3880",
+        "USD": 194
+    },
+    {
+        "HolderAddress": "0x6580f6e37548368338110364e006c6e6a90df067",
+        "Balance": "103",
+        "USD": 5
+    },
+    {
+        "HolderAddress": "0x994b376b12550b972d569922a9a20ecc0cbea05e",
+        "Balance": "1487",
+        "USD": 74
+    },
+    {
+        "HolderAddress": "0x1ae243da0439e54a530034511add92eeaf371b1c",
+        "Balance": "31",
+        "USD": 2
+    },
+    {
+        "HolderAddress": "0x2769d4a63477912ce30f84cbe9129b59a5a14a4f",
+        "Balance": "71",
+        "USD": 4
+    },
+    {
+        "HolderAddress": "0x34eb130c9b29ac1e2b264e6e9893089831d4579e",
+        "Balance": "13",
+        "USD": 1
+    },
+    {
+        "HolderAddress": "0x39786c76037037fa6ad759780e501b65fc8b5b66",
+        "Balance": "140",
+        "USD": 7
+    },
+    {
+        "HolderAddress": "0x4d5e066a4685e9f29cede8f847fbc338f267360e",
+        "Balance": "582",
+        "USD": 29
+    },
+    {
+        "HolderAddress": "0x34eb130c9b29ac1e2b264e6e9893089831d4579e",
+        "Balance": "13",
+        "USD": 1
+    },
+    {
+        "HolderAddress": "0x8843ab51e125ff7c3a86afe2e3770e8763d87a30",
+        "Balance": "388",
+        "USD": 19
+    },
+    {
+        "HolderAddress": "0x93f37d64ea6e4bc4bc228c26233693d37105b598",
+        "Balance": "114",
+        "USD": 6
+    },
+    {
+        "HolderAddress": "0x9a25fa62901de6d0b2cc6e466130949ea75aac56",
+        "Balance": "158",
+        "USD": 8
+    },
+    {
+        "HolderAddress": "0xa3ccbee1729f2d744fe2325c25199cf0e670fc44",
+        "Balance": "613",
+        "USD": 31
+    },
+    {
+        "HolderAddress": "0xc1d73ab45b3fea4c3e95695d409d87d8b6e08967",
+        "Balance": "3363",
+        "USD": 168
+    },
+    {
+        "HolderAddress": "0xe73b10b9f4364d4fc5f2afab45f3bacd3e360247",
+        "Balance": "479",
+        "USD": 24
+    }
+]

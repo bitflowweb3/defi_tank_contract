@@ -1,0 +1,64 @@
+const addresses = require("../build/addresses.json");
+const airdrops = require("../build/airdrops.json");
+const { fromBigNum, toBigNum, saveFiles } = require("./utils");
+
+let NFTTank;
+
+var owner;
+var userWallet;
+const option = { gasPrice: toBigNum("0.2", 9) }
+describe("Create UserWallet", function () {
+    it("Create account", async function () {
+        [owner, userWallet] = await ethers.getSigners();
+        // if (isDeploy) userWallet = { address: "0x00004A5Eb22A7316DF5c396Ca17E770c23B5E058" }
+        const ownerBalance = await ethers.provider.getBalance(owner.address);
+        const userBalance = await ethers.provider.getBalance(userWallet.address);
+        console.log(owner.address, fromBigNum(ownerBalance), userWallet.address, fromBigNum(userBalance));
+
+    });
+});
+
+describe("deploy contract", function () {
+    it("NFTTank contract", async function () {
+        const Factory = await ethers.getContractFactory("NFTTank");
+        NFTTank = await Factory.attach(addresses.NFTTank);
+    });
+})
+describe("admin setting", function () {
+    let { owners, type } = airdrops;
+    // it("NFT airdrop info", async function () {
+    //     var totalSupply = await NFTTank.totalSupply();
+    //     console.log(totalSupply);
+    //     for (let i = 0; i < Number(totalSupply); i++) {
+    //         let owner = await NFTTank.ownerOf(String(i));
+    //         let type = await NFTTank.tanks(String(i));
+    //         owners.push(owner);
+    //         types.push(type.class);
+    //     }
+    // })
+
+    it("NFT airdrop", async function () {
+        // await saveFiles(
+        //     "airdrops.json",
+        //     JSON.stringify({
+        //         owners: owners,
+        //         type: types
+        //     }, undefined, 4)
+        // );
+        // console.log(owners, type);
+        // var tx = await NFTTank.airdrop(owners, type);
+        // await tx.wait()
+    })
+
+
+    // it("NFTTank contract", async function () {
+    //     const tankClasses = {
+    //         prices: [toBigNum(150), toBigNum(250), toBigNum(250), toBigNum(350), toBigNum(350), toBigNum(450)],
+    //         descriptions: ["tank1", "tank2", "tank3", "tank4", "tank5", "tank6"]
+    //     }
+    //     for (let i = 0; i < 6; i++) {
+    //         var tx = await NFTTank.changeClass(String(i), tankClasses.descriptions[i], tankClasses.prices[i]);
+    //         await tx.wait();
+    //     }
+    // })
+});

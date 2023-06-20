@@ -1,0 +1,52 @@
+const { expect } = require("chai");
+const bs58 = require("bs58");
+const { ethers } = require("hardhat");
+const { delay, fromBigNum, toBigNum, saveFiles, sign } = require("./utils.js");
+const { parseUnits } = require("ethers/lib/utils.js");
+var owner;
+var userWallet;
+
+var NFTTank, EnergyPool, TankToken, RewardPool;
+//static
+var USDT = {
+    token: { address: "0x1B27A9dE6a775F98aaA5B90B62a4e2A0B84DbDd9" },
+    decimals: 6,
+    price: 100000,  // 1DFTL = 0.1USDT
+    maxNFT: 10000,
+    maxPerWallet: 100
+}
+var partner = {
+    token: { address: "0xAD522217E64Ec347601015797Dd39050A2a69694" },
+    decimals: 18,
+    price: 500000,  // 1DFTL = 0.5Pumpkin
+    maxNFT: 100,
+    maxPerWallet: 2
+}
+
+const option = {gasPrice:parseUnits("0.2")}
+
+// mode
+var isDeploy = true;
+
+describe("Create UserWallet", function () {
+    it("Create account", async function () {
+        [owner, userWallet] = await ethers.getSigners();
+        if (isDeploy) userWallet = { address: "0x00004A5Eb22A7316DF5c396Ca17E770c23B5E058" }
+        const ownerBalance = await ethers.provider.getBalance(owner.address);
+        const userBalance = await ethers.provider.getBalance(userWallet.address);
+        console.log(owner.address, fromBigNum(ownerBalance), userWallet.address, fromBigNum(userBalance));
+    });
+});
+
+describe("deploy contract", function () {
+
+    it("test token", async function () {
+        const Factory = await ethers.getContractFactory("TankToken");
+        // initial supply 1e7 DFTL = 1e6 $ 
+        TankToken = await Factory.deploy(toBigNum(3000000));
+        await TankToken.deployed();
+        console.log(TankToken.address);
+    });
+
+});
+

@@ -1,0 +1,63 @@
+
+const { expect } = require("chai");
+const keccak256 = require('keccak256')
+const { delay, fromBigNum, toBigNum, saveFiles, sign } = require("./utils.js");
+
+var owner, userWallet;
+var Treasury;
+var isDeploy = false;
+
+var pass = "ss";
+var hash = "0x" + keccak256(pass).toString('hex')
+
+
+describe("Create UserWallet", function () {
+    it("Create account", async function () {
+        [owner, userWallet] = await ethers.getSigners();
+        const ownerBalance = await ethers.provider.getBalance(owner.address);
+        const userBalance = await ethers.provider.getBalance(owner.address);
+        console.log(owner.address, fromBigNum(ownerBalance), userWallet.address, fromBigNum(userBalance));
+    });
+});
+
+describe("deploy contract", function () {
+    it("treasury contract", async function () {
+        const Factory = await ethers.getContractFactory("Treasury");
+        Treasury = await Factory.deploy(
+            hash
+        );
+        await Treasury.deployed();
+        if (isDeploy) {
+            var tx = await Treasury.transferOwnership("0x021049A324FFbe21EDf06871cb8e310cABe7b020");
+            await tx.wait();
+        }
+        if (!isDeploy) {
+            var tx = await Treasury.transferOwnership(userWallet.address);
+            await tx.wait();
+            var tx = await owner.sendTransaction({ to: Treasury.address, value: toBigNum(100) });
+            await tx.wait();
+        }
+        console.log(Treasury.address);
+    })
+})
+
+
+if (!isDeploy) {
+    describe("contract test", function () {
+        it("should be reverted when you not owner or password is wrong", async function () {
+            await expect(Treasury.withdraw(hash, owner.address, toBigNum(10))).to.be.revertedWith("Ownable: caller is not the owner");
+            await expect(Treasury.connect(userWallet).withdraw(hash, owner.address, toBigNum(10))).to.be.revertedWith("permission");
+        })
+        it("should be not reverted when you are owner and password is right", async function () {
+            let hash1 = await Treasury.hash(pass);
+            console.log("hash1", hash1)
+            await expect(Treasury.connect(userWallet).withdraw(hash1, owner.address, toBigNum(10))).not.to.be.reverted;
+        })
+        for (var i = 0; i < 30; i++)
+            it("should be not reverted when you are owner and password is right", async function () {
+                let hash1 = String(await Treasury.hash(pass));
+                console.log("hash1", hash1)
+                await expect(Treasury.connect(userWallet).withdraw(hash1, owner.address, toBigNum(1))).not.to.be.reverted;
+            })
+    })
+}
