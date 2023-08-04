@@ -17,7 +17,7 @@ contract FactoryNFT is PurchasableNFT {
     address public operator;
     // data
     mapping(uint => uint) public levelInfos;
-    mapping(uint => bool) public isPublic;
+    mapping(uint => bool) public isPrivate;
     mapping(uint => mapping(address => bool)) public isWhiteList;
 
     // modifier
@@ -29,8 +29,9 @@ contract FactoryNFT is PurchasableNFT {
     constructor(
         string memory _name,
         string memory _symbol,
-        string memory _baseUri
-    ) PurchasableNFT(_name, _symbol, _baseUri) {
+        string memory _baseUri,
+        address _mainToken
+    ) PurchasableNFT(_name, _symbol, _baseUri, _mainToken) {
         operator = msg.sender;
     }
 
@@ -68,9 +69,9 @@ contract FactoryNFT is PurchasableNFT {
 
     function setPublic(
         uint tokenId,
-        bool _isPublic
+        bool _isPrivate
     ) external onlyTokenOwner(tokenId) {
-        isPublic[tokenId] = _isPublic;
+        isPrivate[tokenId] = _isPrivate;
     }
 
     function setWhiteList(

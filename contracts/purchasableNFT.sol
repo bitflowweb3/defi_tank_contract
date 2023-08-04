@@ -5,6 +5,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "hardhat/console.sol";
 
 contract PurchasableNFT is ERC721Enumerable, Ownable {
     event ClassAdded(uint id, string description, uint price);
@@ -12,6 +13,8 @@ contract PurchasableNFT is ERC721Enumerable, Ownable {
 
     using Address for address;
     using Strings for uint;
+
+    uint constant DECIMALS = 1e18;
 
     // Item class structure
     struct Class {
@@ -27,7 +30,7 @@ contract PurchasableNFT is ERC721Enumerable, Ownable {
      */
     struct Partner {
         address tokenAddress;
-        uint price; // decimals 18
+        uint price; // DECIMALS
         uint maxNFT;
         uint maxPerWallet;
         uint totalNFT;
@@ -52,9 +55,11 @@ contract PurchasableNFT is ERC721Enumerable, Ownable {
     constructor(
         string memory _name,
         string memory _symbol,
-        string memory _baseUri
+        string memory _baseUri,
+        address _mainToken
     ) ERC721(_name, _symbol) {
         baseUri = _baseUri;
+        mainToken = _mainToken;
         admin = msg.sender;
     }
 
@@ -135,7 +140,7 @@ contract PurchasableNFT is ERC721Enumerable, Ownable {
     ) public {
         require(classType < classCount, "Invalid class type");
 
-        _getPayment(mainToken, classInfos[classType].price);
+        _getPayment(paymentToken, classInfos[classType].price);
         _mintItem(msg.sender, classType, refCode);
 
         _checkLimitation(msg.sender, paymentToken);
@@ -180,11 +185,11 @@ contract PurchasableNFT is ERC721Enumerable, Ownable {
     }
 
     function _getPayment(address paymentToken, uint amount) internal {
-        if (paymentToken == mainToken)
+        if (paymentToken == mainToken) {
             IERC20(paymentToken).transferFrom(msg.sender, admin, amount);
-        else {
+        } else {
             require(partners[paymentToken].price > 0, "Invalid tokenAddress");
-            uint amountP = (amount * partners[paymentToken].price) / 1e18;
+            uint amountP = (amount * partners[paymentToken].price) / DECIMALS;
             IERC20(paymentToken).transferFrom(msg.sender, admin, amountP);
         }
     }

@@ -6,11 +6,12 @@ import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "hardhat/console.sol";
 
 interface IFactoryNFT is IERC721 {
     function levelInfos(uint tokenId) external view returns (uint level);
 
-    function isPublic(uint tokenId) external view returns (bool isPublic);
+    function isPrivate(uint tokenId) external view returns (bool isPrivate);
 
     function isWhiteList(
         uint tokenId,
@@ -139,8 +140,13 @@ contract FactoryStakingPool is Ownable, ERC1155 {
     }
 
     function updatePool() public {
-        _updateETHReward();
-        _updateTokenReward();
+        uint newTokenReward = _newTokenReward();
+        rewardPerToken += newTokenReward;
+        uint newETHReward = _newETHReward();
+        rewardPerTokenETH += newETHReward;
+
+        totalRewardPendingAmount += (newTokenReward * totalSupply) / DECIAMLS;
+        totalRewardPendingAmountETH += (newETHReward * totalSupply) / DECIAMLS;
         lastUpdate = block.timestamp;
     }
 
@@ -153,10 +159,26 @@ contract FactoryStakingPool is Ownable, ERC1155 {
         capacity = level * capacityPerLevel - supplies[tokenId];
 
         // if factory is private
-        if (!factoryContract.isPublic(tokenId)) {
+        if (factoryContract.isPrivate(tokenId)) {
             // if account isn't in whitelist, user can't stake
             if (!factoryContract.isWhiteList(tokenId, to)) capacity = 0;
         }
+    }
+
+    function getClaimableAmounts(
+        address to
+    ) external view returns (uint pendingReward, uint pendingRewardETH) {
+        uint newRewardPerToken = rewardPerToken + _newTokenReward();
+        uint newRewardPerTokenETH = rewardPerTokenETH + _newETHReward();
+
+        pendingReward =
+            (newRewardPerToken * totalBalances[to]) /
+            DECIAMLS -
+            rewardDebit[to];
+        pendingRewardETH =
+            (newRewardPerTokenETH * totalBalances[to]) /
+            DECIAMLS -
+            rewardDebitETH[to];
     }
 
     // internal functions
@@ -185,7 +207,7 @@ contract FactoryStakingPool is Ownable, ERC1155 {
         IERC20(mainToken).transfer(to, withdrawAmount);
     }
 
-    function _updateTokenReward() internal {
+    function _newTokenReward() internal view returns (uint) {
         uint rewardBalance = IERC20(mainToken).balanceOf(address(this)) -
             totalStaked -
             totalRewardPendingAmount;
@@ -197,11 +219,11 @@ contract FactoryStakingPool is Ownable, ERC1155 {
             DECIAMLS;
 
         if (rewardAmount > rewardBalance) rewardAmount = rewardBalance;
-
-        rewardPerToken += (rewardAmount * DECIAMLS) / totalSupply;
+        if (totalSupply == 0) return 0;
+        return (rewardAmount * DECIAMLS) / totalSupply;
     }
 
-    function _updateETHReward() internal {
+    function _newETHReward() internal view returns (uint) {
         uint rewardBalance = address(this).balance -
             totalRewardPendingAmountETH;
 
@@ -212,16 +234,22 @@ contract FactoryStakingPool is Ownable, ERC1155 {
             DECIAMLS;
 
         if (rewardAmount > rewardBalance) rewardAmount = rewardBalance;
-
-        rewardPerTokenETH += (rewardAmount * DECIAMLS) / totalSupply;
+        if (totalSupply == 0) return 0;
+        return (rewardAmount * DECIAMLS) / totalSupply;
     }
 
     // claim reward
     function _claimTokenReward(address to) internal {
         if (to == address(0)) return;
-        uint pendingReward = rewardPerToken *
-            totalBalances[to] -
+        uint pendingReward = (rewardPerToken * totalBalances[to]) /
+            DECIAMLS -
             rewardDebit[to];
+        console.log(
+            "pending reward token",
+            pendingReward,
+            totalRewardPendingAmount,
+            rewardDebit[to]
+        );
         IERC20(mainToken).transfer(to, pendingReward);
         totalRewardPendingAmount -= pendingReward;
         rewardDebit[to] += pendingReward;
@@ -229,8 +257,8 @@ contract FactoryStakingPool is Ownable, ERC1155 {
 
     function _claimETHReward(address to) internal {
         if (to == address(0)) return;
-        uint pendingReward = rewardPerTokenETH *
-            totalBalances[to] -
+        uint pendingReward = (rewardPerTokenETH * totalBalances[to]) /
+            DECIAMLS -
             rewardDebitETH[to];
         payable(to).transfer(pendingReward);
         totalRewardPendingAmountETH -= pendingReward;
@@ -278,4 +306,6 @@ contract FactoryStakingPool is Ownable, ERC1155 {
         _updateRewardDebit(to);
         _updateRewardDebit(from);
     }
+
+    receive() external payable {}
 }
